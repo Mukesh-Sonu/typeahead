@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  width: 300px;
+  padding-top: 20px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container > input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.loading,
+.error {
+  padding: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.error {
+  color: red;
+}
+
+.suggestions-list {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: white;
+  z-index: 10;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover,
+.suggestion-item[aria-selected="true"] {
+  background-color: #f0f0f0;
+}
